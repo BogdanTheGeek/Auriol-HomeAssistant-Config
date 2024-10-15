@@ -1,0 +1,184 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+mqtt:
+  sensor:
+    - unique_id: "nexus-th-111-c1-temperature"
+      name: "Temperature"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-1"
+      device_class: "temperature"
+      unit_of_measurement: "°C"
+      value_template: "{{ value_json.temperature_C }}"
+      device:
+        name: "Bedroom Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C1"
+
+    - unique_id: "nexus-th-111-c1-humidity"
+      name: "Humidity"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-1"
+      device_class: "humidity"
+      unit_of_measurement: "%"
+      value_template: "{{ value_json.humidity }}"
+      device:
+        name: "Bedroom Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C1"
+
+    - unique_id: "nexus-th-111-c1-rssi"
+      name: "RSSI"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-1"
+      device_class: "signal_strength"
+      entity_category: "diagnostic"
+      unit_of_measurement: "dBm"
+      value_template: "{{ value_json.rssi }}"
+      device:
+        name: "Bedroom Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C1"
+
+    - unique_id: "nexus-th-111-c1-timestamp"
+      name: "Timestamp"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-1"
+      device_class: "timestamp"
+      entity_category: "diagnostic"
+      value_template: "{{ value_json.time }}"
+      device:
+        name: "Bedroom Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C1"
+
+    - unique_id: "nexus-th-111-c1-battery"
+      name: "Battery"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-1"
+      device_class: "battery"
+      entity_category: "diagnostic"
+      unit_of_measurement: "%"
+      value_template: "{{ float(value_json.battery_ok) * 99 + 1 }}"
+      device:
+        name: "Bedroom Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C1"
+  
+    - unique_id: "nexus-th-111-c2-temperature"
+      name: "Temperature"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-2"
+      device_class: "temperature"
+      unit_of_measurement: "°C"
+      value_template: "{{ value_json.temperature_C }}"
+      device:
+        name: "Kitchen Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C2"
+
+    - unique_id: "nexus-th-111-c2-humidity"
+      name: "Humidity"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-2"
+      device_class: "humidity"
+      unit_of_measurement: "%"
+      value_template: "{{ value_json.humidity }}"
+      device:
+        name: "Kitchen Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C2"
+
+    - unique_id: "nexus-th-111-c2-rssi"
+      name: "RSSI"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-2"
+      device_class: "signal_strength"
+      entity_category: "diagnostic"
+      unit_of_measurement: "dBm"
+      value_template: "{{ value_json.rssi }}"
+      device:
+        name: "Kitchen Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C2"
+
+    - unique_id: "nexus-th-111-c2-timestamp"
+      name: "Timestamp"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-2"
+      device_class: "timestamp"
+      entity_category: "diagnostic"
+      value_template: "{{ value_json.time }}"
+      device:
+        name: "Kitchen Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C2"
+
+    - unique_id: "nexus-th-111-c2-battery"
+      name: "Battery"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-2"
+      device_class: "battery"
+      entity_category: "diagnostic"
+      unit_of_measurement: "%"
+      value_template: "{{ float(value_json.battery_ok) * 99 + 1 }}"
+      device:
+        name: "Kitchen Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C2"
+
+    - unique_id: "nexus-th-111-c3-temperature"
+      name: "Temperature"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-3"
+      device_class: "temperature"
+      unit_of_measurement: "°C"
+      value_template: "{{ value_json.temperature_C }}"
+      device:
+        name: "Hallway Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C3"
+
+    - unique_id: "nexus-th-111-c3-humidity"
+      name: "Humidity"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-3"
+      device_class: "humidity"
+      unit_of_measurement: "%"
+      value_template: "{{ value_json.humidity }}"
+      device:
+        name: "Hallway Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C3"
+
+    - unique_id: "nexus-th-111-c3-rssi"
+      name: "RSSI"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-3"
+      device_class: "signal_strength"
+      entity_category: "diagnostic"
+      unit_of_measurement: "dBm"
+      value_template: "{{ value_json.rssi }}"
+      device:
+        name: "Hallway Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C3"
+
+    - unique_id: "nexus-th-111-c3-timestamp"
+      name: "Timestamp"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-3"
+      device_class: "timestamp"
+      entity_category: "diagnostic"
+      value_template: "{{ value_json.time }}"
+      device:
+        name: "Hallway Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C3"
+
+    - unique_id: "nexus-th-111-c3-battery"
+      name: "Battery"
+      state_topic: "sensors/weather-station/Nexus-TH/id-111/sensor-3"
+      device_class: "battery"
+      entity_category: "diagnostic"
+      unit_of_measurement: "%"
+      value_template: "{{ float(value_json.battery_ok) * 99 + 1 }}"
+      device:
+        name: "Hallway Sensor"
+        manufacturer: "Lidl"
+        identifiers: "Nexus-TH-111-C3"
+  
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
